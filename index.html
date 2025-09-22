@@ -8,15 +8,17 @@
   <h1>Zammad Integration Test</h1>
   <p>If everything works, you should see the Zammad widget appear in the bottom corner.</p>
 
-<script src="https://zammad.0own.com/assets/chat/chat-no-jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+<script src="https://zammad.0own.com/assets/chat/chat.min.js"></script>
 <script>
-(function() {
+$(function() {
   new ZammadChat({
     fontSize: '12px',
     flat: true,
     chatId: 1
   });
-})();
+});
 </script>
 
 </body>
