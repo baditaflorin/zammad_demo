@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiledesk Demo</title>
+</head>
+<body>
+  <h1>Zammad Integration Test</h1>
+  <p>If everything works, you should see the Zammad widget appear in the bottom corner.</p>
+
+<script src="https://zammad.0own.com/assets/chat/chat-no-jquery.min.js"></script>
+<script>
+(function() {
+  new ZammadChat({
+    fontSize: '12px',
+    flat: true,
+    chatId: 1
+  });
+})();
+</script>
+
+</body>
+</html>
